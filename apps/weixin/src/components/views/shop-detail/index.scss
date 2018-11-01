@@ -1,0 +1,98 @@
+.shop-detail {
+    font-family: "Times New Roman", Times, serif;
+
+    width: 100%;
+    height: 100%;
+
+    .back {
+        position: absolute;
+        top: 20px; /* px */
+        left: 20px; /* px */
+
+        width: 40px; /* px */
+        height: 40px; /* px */
+
+        color: #26a2ff;
+        border-radius: 20px; /* px */
+
+        i {
+            font-size: 36px; /* px */
+        }
+    }
+
+    .big-img {
+        width: 100%;
+    }
+
+    .desc {
+        font-size: 32px; /* px */
+        font-weight: bold;
+        line-height: 60px; /* px */
+
+        padding: 20px; /* px */
+
+        background-color: #fff;
+
+        .price-now {
+            color: red;
+        }
+
+        .price-old {
+            font-size: 28px; /* px */
+            font-weight: normal;
+
+            display: flex;
+
+            color: #777;
+
+            justify-content: space-between;
+
+            span {
+                text-decoration: line-through;
+            }
+        }
+
+        .shop-label {
+            font-size: 28px; /* px */
+            font-weight: normal;
+
+            display: flex;
+
+            padding: 20px; /* px */
+
+            background-color: #f6f6f6;
+
+            align-items: center;
+
+            p {
+                margin-right: 40px; /* px */
+                padding-left: 50px; /* px */
+
+                background: url("./assets/mallpod@2x.png") no-repeat 0 0;
+                background-position-y: center;
+                background-size: 32px; /* px */
+            }
+        }
+    }
+
+    .van-tabs__wrap {
+        height: 80px; /* px */
+        margin-top: 20px; /* px */
+
+        .van-tab {
+            line-height: 80px; /* px */
+
+            height: 80px; /* px */
+
+            .van-ellipsis {
+                font-size: 30px; /* px */
+            }
+        }
+    }
+
+    .van-tabs__content {
+        img {
+            width: 100%;
+        }
+    }
+}

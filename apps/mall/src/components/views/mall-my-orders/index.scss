@@ -1,0 +1,76 @@
+.mall-my-orders {
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    background-color: #f6f6f6;
+
+    -webkit-overflow-scrolling: touch;
+
+    .banner {
+        font-size: 32px;
+
+        display: flex;
+
+        box-sizing: border-box;
+        width: 100%;
+        height: 88px;
+
+        color: #a7a7a7;
+        background-color: #fff;
+
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+            font-weight: 700;
+
+            padding-bottom: 4px;
+        }
+
+        .active {
+            font-weight: 700;
+
+            color: #111;
+            border-bottom: 4px solid #12b8f6; /* no */
+        }
+    }
+
+    .list {
+        overflow-y: scroll;
+
+        height: calc(100% - 88px);
+
+        -webkit-overflow-scrolling: touch;
+
+        .empty-data {
+            font-size: 30px;
+
+            margin-top: 300px;
+
+            text-align: center;
+
+            color: #a7a7a7;
+
+            img {
+                width: 400px;
+            }
+
+            p:first-of-type {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .mall-order-box {
+        margin: 20px 0;
+    }
+}
+
+.van-toast {
+    div {
+        font-size: 34px;
+    }
+}

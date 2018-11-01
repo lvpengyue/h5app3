@@ -1,0 +1,258 @@
+.redbag {
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 30px;
+
+    color: #595959;
+    background-color: #3a95f4;
+    // background-image: url("http://img.test.xmulife.com/images/7015f226-72d7-46ec-8fcb-42a923674b73.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    -webkit-overflow-scrolling: touch;
+
+    .top {
+        width: 100%;
+        height: 700px;
+
+        text-align: center;
+
+        img {
+            width: 85%;
+            margin: 30px 0 0;
+        }
+    }
+
+    .answer-wrap {
+        padding: 30px 30px 10px;
+
+        border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0.15);
+
+        .coupon-wrap {
+            display: flex;
+
+            width: 100%;
+            padding: 18px 10px 0;
+
+            background-image: url("./assets/coupon.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+
+            .coupon-sale {
+                font-size: 46px;
+
+                padding: 45px 20px;
+
+                color: red;
+
+                span {
+                    font-size: 60px;
+                }
+            }
+
+            .coupon-des {
+                font-size: 26px;
+
+                padding-top: 10px;
+
+                p:first-of-type {
+                    font-size: 30px;
+                }
+
+                p:last-of-type {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .coupon-phone {
+            font-size: 26px;
+
+            margin: 30px;
+
+            span:first-of-type {
+                color: red;
+            }
+        }
+
+        .open-app {
+            font-size: 34px;
+            line-height: 80px;
+
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+
+            text-align: center;
+
+            color: #fff;
+            background-image: url("./assets/btn-redp.png");
+            background-repeat: no-repeat;
+            background-size: 100% 80px;
+        }
+    }
+
+    .empty-bag {
+        font-size: 32px;
+        font-weight: 700;
+
+        width: 100%;
+        padding: 20px 0;
+
+        text-align: center;
+
+        color: red;
+        border: 2px dotted #595959;
+        background: rgba(0, 0, 0, 0.15);
+    }
+
+    .phone-wrap {
+        width: 100%;
+        padding: 0 50px;
+
+        input,
+        button {
+            display: block;
+
+            width: 100%;
+            height: 80px;
+        }
+
+        input {
+            font-size: 32px;
+
+            padding: 0 10px;
+
+            border: none;
+            border-radius: 6px;
+            box-shadow: #f53541 0 0 4px 4px;
+
+            -webkit-appearance: none;
+        }
+
+        button {
+            font-size: 32px;
+
+            margin-top: 20px;
+
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            background-color: #f53541;
+            box-shadow: #bd313e 0 0 4px 4px;
+        }
+    }
+
+    .list-wrap {
+        font-family: "Microsoft Yahei";
+
+        margin-top: 30px;
+
+        .rule-top {
+            font-size: 40px;
+
+            display: flex;
+
+            width: 100%;
+
+            justify-content: space-around;
+            align-items: center;
+
+            .rule-name {
+                font-weight: 800;
+
+                color: #fff;
+            }
+
+            .line {
+                width: 25%;
+                height: 4px;
+
+                background-color: #fff;
+            }
+        };
+
+        .each-list {
+            display: flex;
+
+            width: 100%;
+
+            justify-content: space-between;
+            align-items: center;
+
+            .list-left {
+                font-size: 30px;
+                line-height: 45px;
+
+                display: flex;
+
+                margin: 20px 0;
+
+                color: #fff;
+
+                align-items: top;
+
+                .left-right {
+                    margin-left: 10px;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            .list-right {
+                font-size: 28px;
+
+                color: #f53541;
+            }
+        }
+    }
+
+    .rules {
+        font-family: "Microsoft Yahei";
+
+        margin-top: 30px;
+
+        .rule-top {
+            font-size: 40px;
+
+            display: flex;
+
+            width: 100%;
+
+            justify-content: space-between;
+            align-items: center;
+
+            .rule-name {
+                font-weight: 800;
+
+                color: #fff;
+            }
+
+            .line {
+                width: 35%;
+                height: 4px;
+
+                background-color: #fff;
+            }
+        };
+
+        .rule-content {
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 50px;
+
+            color: #fff;
+        }
+    }
+}
+
+.van-toast {
+    height: auto;
+}

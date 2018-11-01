@@ -1,0 +1,17 @@
+.operation-manual {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 20px;
+
+    -webkit-overflow-scrolling: touch;
+
+    .van-cell {
+        font-size: 28px;
+        line-height: 64px;
+
+        .van-icon {
+            font-size: 28px;
+            line-height: 64px;
+        }
+    }
+}

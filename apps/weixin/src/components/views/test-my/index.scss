@@ -1,0 +1,121 @@
+.wash {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    // padding: 30px;
+
+    text-align: center;
+
+    background-image: url("./assets/wash-bg.png");
+    background-size: 100% 100%;
+
+    -webkit-overflow-scrolling: touch;
+
+    img {
+        width: 530px;
+        height: 530px;
+        margin-top: 80px;
+    }
+
+    .wash_img {
+        animation: waveCircle 4s linear;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes waveCircle {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+        // 0% {
+        //     transform: rotate(0deg);
+        // }
+
+        // 10% {
+        //     transform: rotate(40deg);
+        // }
+
+        // 20% {
+        //     transform: rotate(80deg);
+        // }
+
+        // 30% {
+        //     transform: rotate(120deg);
+        // }
+
+        // 40% {
+        //     transform: rotate(160deg);
+        // }
+
+        // 50% {
+        //     transform: rotate(200deg);
+        // }
+
+        // 60% {
+        //     transform: rotate(240deg);
+        // }
+
+        // 70% {
+        //     transform: rotate(280deg);
+        // }
+
+        // 80% {
+        //     transform: rotate(320deg);
+        // }
+
+        // 90% {
+        //     transform: rotate(340deg);
+        // }
+
+        // 100% {
+        //     transform: rotate(360deg);
+        // }
+    }
+
+    .wash-percent {
+        font-size: 160px;
+
+        position: absolute;
+        top: 250px;
+        left: 280px;
+
+        color: #12b8f6;
+
+        span {
+            font-size: 34px;
+        }
+    }
+
+    .start-wash {
+        font-size: 80px;
+
+        position: absolute;
+        top: 290px;
+        left: 145px;
+
+        width: 460px;
+    }
+
+    .end-time-name,
+    .address-code-name {
+        font-size: 30px;
+
+        margin-top: 66px;
+
+        color: #a6defb;
+    }
+
+    .end-time-value,
+    .address-code-value {
+        font-size: 36px;
+
+        margin-top: 20px;
+
+        color: #fff;
+    }
+}

@@ -1,0 +1,33 @@
+.mall-shop-box {
+    width: 310px;
+    height: auto;
+
+    .img {
+        width: 100%;
+        height: 200px;
+
+        background-color: red;
+    }
+
+    h4 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    p {
+        font-size: 32px;
+        line-height: 50px;
+
+        color: red;
+
+        span {
+            font-size: 28px;
+
+            margin-left: 20px;
+
+            text-decoration: line-through;
+
+            color: #7c7c7c;
+        }
+    }
+}

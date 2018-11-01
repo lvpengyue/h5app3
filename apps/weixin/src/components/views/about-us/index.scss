@@ -1,0 +1,44 @@
+.about-us {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    color: #595959;
+
+    img {
+        width: 120px;
+        margin-top: 60px;
+    }
+
+    .version {
+        width: 100px;
+        margin: 0 auto;
+
+        border: 1px solid #595959;
+        border-radius: 36px;
+    }
+
+    .contact,
+    .abstract {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 46px;
+
+        margin-top: 80px;
+        padding: 30px;
+
+        text-align: left;
+    }
+
+    .contact {
+        margin-top: 0;
+    }
+
+    .bottom {
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+    }
+}

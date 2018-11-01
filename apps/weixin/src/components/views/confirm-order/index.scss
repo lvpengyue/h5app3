@@ -1,0 +1,75 @@
+.confirm-order {
+    width: 100%;
+    height: 100%;
+
+    .address-box {
+        margin-top: 20px; /* px */
+
+        border-bottom: 1px solid #ddd; /* no */
+    }
+
+    & > .van-button {
+        font-size: 28px;
+        line-height: 60px; /* px */
+
+        height: 60px; /* px */
+        margin: 20px; /* px */
+        padding: 0 20px;
+
+        border: none;
+        border-radius: 20px;
+        background-color: #12b8f6;
+    }
+
+    .tip {
+        line-height: 40px; /* no */
+
+        height: 40px; /* no */
+        margin-top: 10px;
+        padding: 0 20px; /* px */
+
+        color: #12b8f6;
+
+        img {
+            position: relative;
+
+            height: 20px;
+            // top: 3px;
+        }
+    }
+
+    .buy-wrap {
+        font-size: 40px; /* px */
+        line-height: 80px; /* px */
+
+        position: fixed;
+        bottom: 0;
+
+        display: flex;
+
+        width: 100%;
+        height: 80px; /* px */
+
+        background-color: #fff;
+
+        .price {
+            width: 70%;
+            padding-right: 20px; /* px */
+
+            text-align: right;
+
+            span {
+                color: red;
+            }
+        }
+
+        .buy {
+            width: 30%;
+
+            text-align: center;
+
+            color: #fff;
+            background-color: #26a2ff;
+        }
+    }
+}

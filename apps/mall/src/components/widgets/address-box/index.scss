@@ -1,0 +1,54 @@
+.address-box {
+    display: flex;
+
+    width: 100%;
+
+    background-color: #fff;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .shape,
+    .choose-address {
+        line-height: 140px;
+
+        width: 40px;
+        height: 140px;
+
+        text-align: center;
+
+        color: #aaa;
+    }
+
+    .shape {
+        background: url("./assets/Shape4@2x.png") no-repeat 50% 50%;
+        background-size: 30px;
+    }
+
+    .choose-address {
+        background: url("./assets/shape-gray@2x.png") no-repeat 50% 50%;
+        background-size: 20px;
+    }
+
+    .address-content {
+        font-size: 28px;
+
+        width: calc(100% - 160px);
+        height: 100%;
+        padding: 20px;
+
+        color: #323232;
+
+        // border: 1px solid blue;
+
+        .people {
+            display: flex;
+
+            height: 80px;
+
+            color: #000;
+
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "generator-fe": {
+    "generator-name": "generator-fe",
+    "generator-version": "1.2.0",
+    "name": "ux wx",
+    "version": "1.0.0",
+    "description": "ux weixin",
+    "platform": "mobile"
+  }
+}

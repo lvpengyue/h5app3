@@ -1,0 +1,49 @@
+.people-num {
+    padding: 20px; /* px */
+
+    p {
+        font-size: 28px;
+        font-weight: 500; /* px */
+
+        padding: 20px; /* px */
+
+        text-align: center;
+
+        .distance-num {
+            color: red;
+        }
+    }
+
+    .image-list {
+        display: flex;
+
+        margin: 20px; /* px */
+
+        justify-content: space-around;
+
+        img {
+            width: 120px; /* px */
+            height: 120px; /* px */
+
+            border-radius: 60px; /* px */
+        }
+
+        .host {
+            position: relative;
+
+            width: 120px; /* px */
+            height: 120px; /* px */
+
+            border-radius: 60px;
+
+            img:first-of-type {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 60px; /* px */
+                height: 30px; /* px */
+            }
+        }
+    }
+}

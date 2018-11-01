@@ -1,0 +1,141 @@
+.feedback {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+    color: #595959;
+
+    textarea {
+        font-size: 28px;
+
+        width: 100%;
+        padding: 10px;
+
+        resize: none;
+
+        border: 1px solid #a5a5a5;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .title {
+        font-size: 36px;
+        font-weight: 800;
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-size: 28px;
+
+        width: 100%;
+        height: 66px;
+        margin-top: 20px;
+        padding: 10px;
+
+        border: 1px solid #a5a5a5;
+        border-radius: 12px;
+    }
+
+    .van-checkbox-group {
+        display: flex;
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        .van-checkbox {
+            font-size: 32px;
+
+            width: 50%;
+            padding: 20px;
+
+            .van-icon-success::before {
+                font-size: 24px;
+
+                content: "";
+            }
+
+            .van-checkbox--checked {
+                border-color: #1cbc98;
+                background-color: #1cbc98;
+            }
+
+            .van-checkbox--checked::before {
+                font-size: 24px;
+
+                width: 36px;
+
+                content: "\F056";
+
+                color: #fff;
+            }
+
+            .van-checkbox__icon {
+                font-size: 32px;
+                line-height: 36px;
+
+                display: inline-flex;
+
+                width: 36px;
+                height: 36px;
+
+                align-items: center;
+            }
+        }
+    }
+
+    .submit {
+        font-size: 32px;
+
+        width: 80%;
+        margin-top: 60px;
+        margin-left: 10%;
+        padding: 20px;
+
+        border: none;
+        border-radius: 42px;
+        background-color: #12b8f6;
+    }
+}
+
+.van-toast {
+    font-size: 28px;
+
+    top: 80%;
+
+    height: auto;
+    padding: 30px 10px;
+
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+.van-dialog {
+    font-size: 28px;
+
+    width: 70%;
+
+    border-radius: 20px;
+
+    .van-dialog__content {
+        text-align: center;
+    }
+
+    .van-dialog__footer {
+        display: flex;
+
+        height: 100px;
+        max-height: 100px;
+
+        align-items: center;
+    }
+
+    .van-dialog__confirm {
+        font-size: 36px;
+
+        // margin: 10px 0; /* no */
+    }
+}

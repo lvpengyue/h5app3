@@ -1,0 +1,130 @@
+.order-list {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 30px;
+    // background: #fff;
+
+    -webkit-overflow-scrolling: touch;
+
+    .order-each {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: #e0e0e0 0 0 3px 4px;
+
+        .order-title {
+            font-size: 30px;
+
+            display: flex;
+
+            height: 80px;
+            padding: 0 30px;
+
+            border-bottom: 1px solid #e0e0e0;
+
+            justify-content: space-between;
+            align-items: center;
+
+            .time {
+                font-family: "微软雅黑";
+                font-weight: 900;
+            }
+
+            .status {
+                font-weight: 900;
+
+                color: #a3a3a3;
+            }
+
+            .error {
+                font-weight: 900;
+
+                color: red;
+            }
+        }
+
+        .order-content {
+            padding: 20px 30px;
+
+            li {
+                font-size: 30px;
+                line-height: 50px;
+
+                height: 50px;
+                padding-left: 50px;
+
+                color: #a3a3a3;
+                background-repeat: no-repeat;
+                background-position: 0 50%;
+                background-size: 26px;
+            }
+
+            .order-num {
+                background-image: url("./assets/num.png");
+            }
+
+            .order-mode {
+                background-image: url("./assets/mode.png");
+            }
+
+            .order-address {
+                background-image: url("./assets/address.png");
+            }
+        }
+
+        .order-foot {
+            font-size: 32px;
+            line-height: 80px;
+
+            display: flex;
+
+            height: 80px;
+            padding: 0 30px;
+
+            justify-content: space-between;
+
+            span {
+                font-size: 36px;
+
+                color: #12b8f6;
+            }
+
+            .order-money {
+                margin-right: 10px;
+            }
+
+            button {
+                font-size: 28px;
+                font-weight: 800;
+                line-height: 60px;
+
+                position: relative;
+                bottom: 10px;
+
+                height: 60px;
+                padding: 0 12px;
+
+                color: #fff;
+                border: none;
+                border-radius: 16px;
+                background-color: #1ec4a2;
+            }
+        }
+    }
+
+    .empty-data {
+        font-size: 30px;
+
+        padding-top: 20px;
+
+        text-align: center;
+
+        color: #aaa;
+    }
+}

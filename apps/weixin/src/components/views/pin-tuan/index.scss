@@ -1,0 +1,267 @@
+.pin {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    .content-wrap {
+        padding-top: 20px; /* px */
+        .people-wrap {
+            width: 100%;
+            height: auto;
+            margin-top: 20px; /* px */
+            padding: 20px; /* px */
+
+            background-color: #fff;
+
+            // border: 1px solid blue;
+
+            .van-button {
+                font-size: 28px;
+
+                width: 100%;
+                height: 100px;
+
+                border: none;
+                background-color: #12b8f6;
+            }
+        }
+
+        .import-message {
+            line-height: 80px; /* px */
+
+            height: 80px; /* px */
+            padding: 0 20px; /* px */
+
+            color: #aaa;
+            border-top: 1px solid #ddd; /* no */
+            background-color: #fff;
+
+            span {
+                font-weight: bold;
+
+                color: #111;
+            }
+        }
+    }
+
+    .share-wrap {
+        position: absolute;
+        z-index: 1098;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(89, 89, 89, 0.6);
+
+        .share-register {
+            position: fixed;
+            z-index: 1099;
+            top: 0;
+            top: 5%;
+            right: 10%;
+
+            width: 60%;
+
+            color: red;
+        }
+    }
+
+    .message-wrap {
+        position: absolute;
+        // z-index: l00;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(202, 199, 199, 0.5);
+
+        .login {
+            position: relative;
+
+            width: 70%;
+            // height: 300px; /* no */
+            margin: auto;
+            margin-top: 40%;
+
+            border: 1px solid #fff; /* no */
+            border-radius: 16px; /* no */
+            background-color: #c5e0ff;
+
+            & > img {
+                position: absolute;
+                right: 0;
+
+                width: 40px; /* px */
+            }
+
+            .title {
+                font-size: 36px; /* px */
+                line-height: 100px; /* px */
+
+                height: 100px; /* px */
+
+                text-align: center;
+
+                color: #12b8f6;
+            }
+
+            form {
+                padding: 20px; /* no */
+
+                text-align: center;
+
+                border-radius: 0 0 16px 16px; /* no */
+                background-color: #fff;
+
+                .input-wrap {
+                    display: flex;
+
+                    width: 100%;
+                    height: 80px; /* px */
+                    margin-bottom: 20px; /* px */
+                    padding: 20px; /* px */
+
+                    border-bottom: 1px solid #ddd; /* no */
+
+                    justify-content: space-between;
+
+                    .phone {
+                        width: 28px; /* px */
+                        margin-right: 22px; /* px */
+                    }
+
+                    .mail {
+                        width: 40px; /* px */
+                        margin-right: 16px; /* px */
+                    }
+
+                    input {
+                        font-size: 24px; /* px */
+
+                        width: 100%;
+                        height: 40px; /* px */
+
+                        border: none;
+                    }
+
+                    // .telephone-code {
+                    //     width: 70%;
+                    // }
+
+                    .get-pwd {
+                        font-size: 24px; /* px */
+                        line-height: 40px; /* px */
+
+                        width: 340px; /* px */
+                        padding-left: 10px;
+
+                        color: #12b8f6;
+                        border-left: 2px solid #ddd; /* no */
+                    }
+                }
+
+                .image-captcha-wrap {
+                    position: relative;
+
+                    height: 40px; /* px */
+                    margin-bottom: 30px; /* px */
+
+                    .van-cell {
+                        padding: 0;
+                    }
+
+                    .van-cell__title {
+                        font-size: 24px; /* px */
+                        font-weight: 400;
+                        line-height: 70px;
+
+                        max-width: 100px; /* px */
+                        height: 70px; /* px */
+
+                        color: #777;
+                    }
+
+                    .van-cell__value {
+                        input {
+                            font-size: 24px; /* px */
+
+                            height: 70px; /* px */
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+
+                        width: 140px; /* px */
+                        height: 40px; /* px */
+                    }
+                }
+
+                .van-cell:not(:last-child)::after {
+                    left: 0;
+                }
+
+                // .van-field {
+                //     .van-cell-wrapper {
+                //         padding: 0;
+
+                //         background: none;
+                //     }
+                // }
+
+                .van-button {
+                    line-height: 60px; /* px */
+
+                    width: 320px; /* px */
+                    height: 60px; /* px */
+                    margin: 0 auto;
+                    margin-top: 20px; /* no */
+
+                    border: none;
+                    border-radius: 18px; /* no */
+                    background-color: #12b8f6;
+
+                    .van-button__text {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .code {
+            font-family: "Microsoft YaHei ";
+
+            width: 600px; /* px */
+            height: 600px; /* px */
+            margin: auto;
+            margin-top: 300px; /* px */
+            padding: 80px; /* px */
+
+            text-align: center;
+
+            border-radius: 30px; /* px */
+            background-color: #fff;
+
+            p:first-of-type {
+                font-size: 30px; /* px */
+                font-weight: bold;
+            }
+
+            p:last-of-type {
+                font-size: 24px; /* px */
+
+                margin: 20px 0; /* px */
+
+                color: #aaa;
+            }
+
+            img {
+                width: 380px; /* px */
+            }
+        }
+    }
+}

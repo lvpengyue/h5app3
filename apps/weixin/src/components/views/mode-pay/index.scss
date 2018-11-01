@@ -1,0 +1,353 @@
+.mode-pay {
+    position: relative;
+
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 30px;
+
+    background-color: #f6f9fe;
+
+    -webkit-overflow-scrolling: touch;
+
+    .machine-detail {
+        width: 100%;
+        padding-bottom: 20px;
+        // height: 400px;
+
+        text-align: center;
+
+        border-radius: 20px;
+        background-color: #fff;
+
+        img {
+            width: 70px;
+            margin-top: 20px;
+        }
+
+        .machine-code {
+            font-size: 30px;
+        }
+
+        .keywash {
+            font-size: 24px;
+
+            width: 120px;
+            margin: 10px auto;
+            padding: 10px;
+
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        .canuse {
+            background-color: #1ec4a2;
+        }
+
+        .nouse {
+            background-color: #d7d7d7;
+        }
+
+        .back-time {
+            color: #d7d7d7;
+        }
+
+        hr {
+            width: 60px;
+            margin: 16px auto;
+        }
+
+        .address {
+            font-size: 28px;
+        }
+
+        .status {
+            font-size: 30px;
+            font-weight: 900;
+        }
+    }
+
+    .select-mode {
+        font-size: 28px;
+
+        margin: 30px 0 16px;
+
+        color: #6f6e6e;
+    }
+
+    .mode-list {
+        padding: 0 30px;
+
+        background-color: #fff;
+
+        li {
+            display: flex;
+
+            height: 110px;
+            padding: 0 20px;
+
+            border-bottom: 1px dashed #d7d7d7;
+            background-repeat: no-repeat;
+            background-position: 30px 50%;
+            background-size: 44px 46px;
+
+            align-items: center;
+            justify-content: space-between;
+
+            .mode-name {
+                margin-left: 80px;
+
+                .type-name {
+                    font-size: 30px;
+                    font-weight: 700;
+
+                    color: #333;
+
+                    img {
+                        height: 26px;
+                        margin-left: 6px;
+                    }
+                }
+
+                .type-detail {
+                    font-size: 20px;
+
+                    color: #6f6e6e;
+                }
+            }
+
+            .mode-value {
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .mode-value-wrap {
+                font-size: 26px;
+                font-weight: 700;
+
+                display: flex;
+
+                align-items: center;
+
+                .ori-value {
+                    display: block;
+
+                    text-decoration: line-through;
+
+                    color: #6f6e6e;
+                }
+
+                .now-value {
+                    font-size: 30px;
+
+                    display: block;
+
+                    color: red;
+                }
+            }
+        }
+
+        li:nth-of-type(1) {
+            background-image: url("./assets/single-wash.png");
+        }
+
+        li:nth-of-type(2) {
+            background-image: url("./assets/fast-wash.png");
+        }
+
+        li:nth-of-type(3) {
+            background-image: url("./assets/standard-wash.png");
+        }
+
+        li:nth-of-type(4) {
+            border-bottom: 1px solid #6f6e6e;
+            background-image: url("./assets/strong-wash.png");
+        }
+
+        .selected {
+            background-color: #f0fafe;
+        }
+
+        .mode-coupons {
+            display: flex;
+
+            height: 100px;
+
+            align-items: center;
+            justify-content: space-between;
+
+            .coupons-name {
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .coupons-num {
+                font-size: 28px;
+
+                display: inline-flex;
+
+                p {
+                    padding: 8px 20px;
+
+                    color: #fff;
+                    border-radius: 6px;
+                    background-color: #ef7a55;
+                }
+
+                .van-icon-arrow {
+                    font-size: 30px;
+
+                    position: relative;
+                    top: 14px;
+                }
+            }
+        }
+    }
+
+    .mode-button {
+        font-size: 32px;
+
+        overflow: hidden;
+
+        width: 80%;
+        height: 90px;
+        margin: 50px auto;
+
+        text-align: center;
+
+        border-radius: 45px;
+        background-color: #12b8f6;
+    }
+
+    .van-button {
+        font-size: 32px;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 45px;
+        background-color: #12b8f6;
+    }
+
+    .tip-show {
+        width: 630px;
+
+        border-radius: 14px;
+        // height:610px;
+        background: rgba(255,255,255,1);
+
+        .tip-title {
+            font-family: PingFangHK-Medium;
+            font-size: 36px;
+            font-weight: 500;
+
+            position: relative;
+
+            margin: 40px auto 0;
+
+            text-align: center;
+
+            color: rgba(18,184,246,1);
+
+            .tip-close {
+                position: absolute;
+                top: 4px;
+                right: 50px;
+                // width: 72px;
+                // height: 72px;
+
+                color: rgba(231,231,232,1);
+            }
+
+            .tip-close::before {
+                font-size: 46px;
+            }
+        }
+
+        .tip-content {
+            font-family: PingFangHK-Regular;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 52px;
+
+            width: 510px;
+            margin: 44px auto;
+
+            color: rgba(0,0,0,1);
+        }
+
+        img {
+            display: block;
+
+            width: 226px;
+            height: 210px;
+            margin: 0 auto 56px;
+        }
+    }
+
+    .share-show {
+        z-index: 2000;
+
+        width: 64%;
+        height: 37.5%;
+
+        background: none;
+
+        .share-title {
+            font-size: 42px;
+
+            display: flex;
+
+            margin-right: 20px;
+
+            color: #fff;
+
+            justify-content: flex-end;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .share-tip {
+        position: absolute;
+        z-index: 1999;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(89, 89, 89, 0.6);
+
+        .share-register {
+            position: absolute;
+            z-index: 1099;
+            top: 5%;
+            right: 10%;
+
+            width: 60%;
+
+            color: red;
+        }
+    }
+}
+
+.van-toast {
+    width: auto;
+    height: auto;
+    padding: 20px;
+
+    .van-toast__icon {
+        margin-top: 20px;
+    }
+
+    .van-toast__text {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,36 @@
+.pay {
+    width: 100%;
+    height: 100%;
+}
+
+.pay .content .price {
+    font-size: 34px; /* px */
+    line-height: 100px; /* px */
+
+    height: 100px; /* px */
+    padding: 0 20px; /* px */
+}
+
+.pay .content .mint-cell {
+    border-bottom: 1px solid #eee;
+}
+
+.pay .content .price span {
+    color: red;
+}
+
+.pay .van-cell,
+.pay .van-cell .van-cell__left-icon,
+.pay .van-cell .van-cell__right-icon {
+    font-size: 34px; /* px */
+    line-height: 100px; /* px */
+
+    height: 100px; /* px */
+    padding: 0 10px;
+}
+
+.pay .van-icon-wechat::before {
+    font-size: 40px;
+
+    color: #459d38;
+}

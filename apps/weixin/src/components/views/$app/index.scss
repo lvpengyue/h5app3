@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+
+    height: 100%;
+    min-height: 100%;
+
+    background-color: #fff;
+}
+
+#app {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    background-color: #f6f6f6;
+
+    .page-wrapper {
+        font-family: "微软雅黑", "Times New Roman", Times, serif;
+
+        overflow: auto;
+        // width: 750px;
+
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .common-wash-circle {
+        position: absolute;
+        z-index: 1023;
+        right: 0;
+        bottom: 300px;
+
+        overflow: hidden;
+
+        width: 120px;
+        height: 120px;
+
+        transform: rotate(0deg);
+
+        border-radius: 60px;
+
+        .outer-ring {
+            position: absolute;
+
+            width: 120px;
+            height: 120px;
+
+            animation: waveCircle 2s linear infinite;
+        }
+
+        @-webkit-keyframes waveCircle {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .wash-ball {
+            position: absolute;
+
+            width: 120px;
+            height: 120px;
+        }
+
+
+        .ball-wrap {
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+            display: flex;
+            overflow: hidden;
+
+            width: 80px;
+            height: 80px;
+
+            transform: rotate(0deg);
+
+            border-radius: 40px;
+
+            -webkit-appearance: none;
+            align-items: center;
+            justify-content: center;
+
+            .wash-little-percent {
+                font-size: 28px;
+
+                z-index: 900;
+
+                color: red;
+
+                span {
+                    font-size: 10px;
+                }
+            }
+
+            .waiting {
+                font-size: 20px;
+            }
+
+            // .circle11 {
+            //     position: absolute;
+            //     z-index: 899;
+            //     top: 0;
+            //     left: 0;
+
+            //     width: 80px;
+            //     height: 80px;
+            // }
+
+            .circle11 {
+                // position: relative;
+                position: absolute;
+                z-index: 99;
+                top: 80px;
+                left: -140px;
+
+                width: 360px;
+                height: 360px;
+
+                transform: rotate(-70deg);
+                animation: rotate 5500s linear infinite alternate;
+
+                border-radius: 43%;
+                background: rgb(118, 218, 255);
+            }
+
+            @-webkit-keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360000deg);
+                }
+            }
+        }
+    }
+}
+
+.mint-header {
+    font-size: 28px; /* px */
+    line-height: 100px; /* px */
+
+    height: 100px; /* px */
+
+    .mint-header-title {
+        font-size: 36px; /* px */
+    }
+
+    .mint-header-button {
+        button {
+            height: 100px; /* px */
+
+            .mint-button-icon {
+                i {
+                    font-size: 28px; /* px */
+                }
+            }
+        }
+    }
+}
+
+.mint-button {
+    font-size: 28px; /* px */
+
+    height: 100px; /* px */
+}
+
+.van-toast {
+    font-size: 30px;
+
+    width: 360px;
+    height: 360px;
+
+    .van-toast__icon {
+        font-size: 120px;
+    }
+
+    .van-toast__text {
+        font-size: 30px;
+    }
+}
+
+.van-icon-fail::before {
+    color: red;
+}
+
+.van-icon-success::before {
+    color: #12b8f6;
+}
+
+.van-loading {
+    width: 100px; /* px */
+    height: 100px; /* px */
+}

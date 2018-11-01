@@ -1,0 +1,144 @@
+.my-coupons {
+    position: relative;
+
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 30px 30px 110px;
+
+    -webkit-overflow-scrolling: touch;
+
+    .coupon {
+        position: relative;
+
+        width: 100%;
+        height: 220px;
+
+        background-size: 100% 220px;
+
+        img {
+            display: none;
+        }
+
+        .out-time,
+        .used {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+
+            display: block;
+
+            width: 100px;
+        }
+
+        .checked_coupon {
+            position: absolute;
+            top: 2px;
+            right: 4px;
+
+            display: block;
+
+            width: 60px;
+        }
+
+        .coupon-detail {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            width: 410px;
+            height: 170px;
+            padding-left: 60px;
+
+            color: #fff;
+
+            .coupon-name {
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 60px;
+
+                height: 60px;
+                margin-top: 10px;
+            }
+
+            .coupon-type {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 50px;
+
+                height: 50px;
+            }
+
+            .end-time {
+                font-size: 24px;
+                line-height: 40px;
+
+                height: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        .coupon-sale {
+            font-size: 46px;
+            line-height: 170px;
+
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            width: 180px;
+            height: 170px;
+
+            text-align: center;
+
+            color: #111;
+        }
+    }
+
+
+    .normal {
+        background-image: url("./assets/normal.png");
+
+        .coupon-sale {
+            color: #aaa;
+        }
+    }
+
+    .sale {
+        background-image: url("./assets/sale.png");
+    }
+
+    .water {
+        background-image: url("./assets/washer-water.png");
+    }
+
+    .no-use {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 100px;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100px;
+
+        text-align: center;
+
+        background-color: #fff;
+        box-shadow: #e0e0e0 0 0 1px 1px;
+    }
+
+    .empty-data {
+        font-size: 30px;
+
+        padding-top: 20px;
+
+        text-align: center;
+
+        color: #aaa;
+    }
+}

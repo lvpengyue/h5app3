@@ -1,0 +1,157 @@
+.wash-order-detail {
+    position: relative;
+
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 20px 0;
+
+    -webkit-overflow-scrolling: touch;
+
+    .share-tip {
+        position: absolute;
+        z-index: 1098;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(89, 89, 89, 0.6);
+
+        .share-register {
+            position: fixed;
+            z-index: 1099;
+            top: 0;
+            top: 5%;
+            right: 10%;
+
+            width: 60%;
+
+            color: red;
+        }
+    }
+
+    .order-status {
+        background-color: #fff;
+
+        .content {
+            margin: 0 20px;
+            padding: 40px 0;
+
+            text-align: center;
+
+            border-bottom: 1px solid #ccc;
+
+            h3 {
+                font-size: 36px;
+
+                color: #12b8f6;
+            }
+
+            .refund {
+                font-size: 26px;
+
+                display: block;
+
+                width: 110px;
+                margin: 16px auto 0;
+                padding: 8px 12px;
+
+                color: #fff;
+                border-radius: 6px;
+                background-color: red;
+            }
+
+            .share-wrap {
+                font-size: 26px;
+
+                display: flex;
+
+                padding: 26px 0 0 0;
+
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    height: 30px;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+
+    .pay-info,
+    .order-info {
+        background: #fff;
+
+        h4,
+        .order-cell {
+            margin: 0 20px;
+        }
+
+        h4 {
+            font-size: 30px;
+
+            padding: 20px;
+        }
+
+        .order-cell {
+            font-size: 30px;
+            font-weight: 500;
+
+            position: relative;
+
+            display: flex;
+
+            padding: 30px 20px;
+
+            color: #333;
+            border-bottom: 1px solid #ccc;
+
+            justify-content: space-between;
+
+            .to_copy {
+                display: inline-block;
+
+                color: #12b8f6;
+            }
+
+            #copy-text {
+                position: absolute;
+                z-index: -10;
+                top: 0;
+                left: 0;
+
+                opacity: 0;
+            }
+
+            .discount-price {
+                color: red;
+            }
+        }
+
+        .pay-price {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .order-cell:last-of-type {
+            border: none;
+        }
+    }
+
+    .order-info {
+        margin-top: 30px;
+
+        .order-cell {
+            p:last-of-type {
+                color: #aaa;
+            }
+        }
+    }
+}
+
+.van-toast--bottom {
+    height: auto;
+}

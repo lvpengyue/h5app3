@@ -1,0 +1,128 @@
+.confirm-order {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 20px;
+
+    background-color: #efefef;
+
+    .address-box {
+        border-bottom: 1px solid #ddd; /* no */
+    }
+
+    & > .van-button {
+        font-size: 28px;
+        line-height: 60px;
+
+        height: 60px;
+        margin: 20px;
+        padding: 0 20px;
+
+        border: none;
+        border-radius: 20px;
+        background-color: #12b8f6;
+    }
+
+    .tip {
+        line-height: 40px;
+
+        height: 40px;
+        margin-top: 10px;
+        padding: 0 20px;
+
+        color: #12b8f6;
+
+        img {
+            position: relative;
+
+            height: 20px;
+            // top: 3px;
+        }
+    }
+
+    .buy-wrap {
+        font-size: 30px;
+
+        position: fixed;
+        bottom: 0;
+
+        display: flex;
+
+        width: 100%;
+        height: 110px;
+
+        background-color: #fff;
+
+        .price {
+            line-height: 110px;
+
+            width: 70%;
+            height: 110px;
+            padding-left: 20px;
+
+            text-align: left;
+
+            color: #333;
+
+            span {
+                color: red;
+            }
+        }
+
+        .buy {
+            width: 30%;
+
+            color: #fff;
+            background-color: #11b0f5;
+
+            .sig-buy {
+                margin-top: 20px;
+            }
+
+            p {
+                width: 100%;
+
+                text-align: center;
+            }
+
+            .discount_str {
+                font-size: 24px;
+            }
+
+            .group-buy {
+                line-height: 110px;
+
+                height: 110px;
+                margin-top: 0;
+
+                text-align: center;
+            }
+        }
+    }
+}
+
+.van-dialog {
+    font-size: 36px;
+
+    width: 70%;
+
+    border-radius: 24px;
+
+    .van-dialog__message {
+        font-size: 34px;
+
+        padding: 40px 50px;
+
+        text-align: center;
+    }
+
+    .van-dialog__footer {
+        // padding: 20px 0;
+        .van-button {
+            margin: 20px 0;
+
+            .van-button__text {
+                font-size: 36px;
+            }
+        }
+    }
+}

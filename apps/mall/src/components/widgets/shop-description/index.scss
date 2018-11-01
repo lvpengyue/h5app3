@@ -1,0 +1,93 @@
+.shop {
+    height: auto;
+    padding-bottom: 10px;
+
+    background-color: #fff;
+
+    .shop-desc {
+        font-family: "宋体";
+
+        display: flex;
+
+        height: auto;
+        height: 240px;
+        padding: 20px;
+        // border: 1px solid red;
+
+        justify-content: space-around;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+
+            width: calc(100% - 90px);
+            height: 100px;
+            margin-left: 20px;
+
+            .name {
+                font-size: 28px;
+                font-weight: normal;
+
+                height: 100px;
+
+                color: #333;
+            }
+
+            .new-price {
+                line-height: 48px;
+
+                height: 48px;
+                height: 48px;
+
+                color: red;
+
+                span {
+                    font-size: 24px;
+
+                    overflow: hidden;
+
+                    margin-left: 10px;
+                    padding: 4px 6px;
+
+                    border: 1px solid red;
+                    border-radius: 24px;
+                }
+            }
+
+            .old-price {
+                font-size: 28px;
+                line-height: 48px;
+
+                height: 48px;
+
+                text-decoration: line-through;
+
+                color: #aaa;
+            }
+        }
+    }
+
+    .tip {
+        font-size: 24px;
+        line-height: 40px;
+
+        height: 40px;
+        margin: 10px 20px;
+        padding: 0 20px;
+
+        color: #000;
+        background-color: #fdf7ea;
+
+        img {
+            position: relative;
+
+            height: 20px;
+            // top: 3px;
+        }
+    }
+}

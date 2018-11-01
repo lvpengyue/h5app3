@@ -1,0 +1,51 @@
+.shop-desc {
+    font-family: "宋体";
+
+    display: flex;
+
+    height: auto;
+    height: 240px; /* px */
+    padding: 20px; /* px */
+
+    background-color: #fff;
+    // border: 1px solid red;
+
+    justify-content: space-around;
+
+    img {
+        width: 200px; /* px */
+        height: 200px; /* px */
+    }
+
+    .title {
+        font-size: 32px; /* px */
+        font-weight: bold;
+
+        width: calc(100% - 90px);
+        height: 100px; /* px */
+        margin-left: 20px; /* px */
+
+        .name {
+            height: 100px; /* px */
+        }
+
+        .new-price {
+            line-height: 48px; /* px */
+
+            height: 48px; /* px */
+
+            color: red;
+        }
+
+        .old-price {
+            font-size: 28px;
+            line-height: 48px; /* px */
+
+            height: 48px; /* px */
+
+            text-decoration: line-through;
+
+            color: #aaa;
+        }
+    }
+}

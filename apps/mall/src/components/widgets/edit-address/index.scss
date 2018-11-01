@@ -1,0 +1,196 @@
+
+.address-picker {
+    position: absolute;
+    z-index: 120;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(12, 34, 44, 0.3);
+
+    .edit-wrap {
+        font-family: Arial, Helvetica, sans-serif;
+
+        position: absolute;
+        z-index: 122;
+        top: 50%;
+        left: 50%;
+
+        width: 672px;
+        padding: 10px;
+
+        transform: translate(-50%, -50%);
+
+        .close {
+            height: 80px;
+            padding: 0 20px;
+
+            text-align: right;
+
+            img {
+                height: 38px;
+            }
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 100px;
+
+            height: 100px;
+
+            text-align: center;
+
+            color: #111;
+            // border-bottom: 1px solid #eee;
+            border-radius: 20px 20px 0 0; /* no */
+            background-color: #fff;
+        }
+
+        .van-cell {
+            font-size: 30px;
+
+            min-height: 80px;
+            padding: 0 30px;
+
+            .van-cell__title {
+                font-size: 26px;
+
+                display: flex;
+
+                max-width: 110px;
+
+                background: none;
+
+                align-items: center;
+            }
+
+            .van-cell__value {
+                font-size: 26px;
+
+                display: flex;
+
+                background: none;
+
+                align-items: center;
+
+                .van-field__control {
+                    color: #8e8e8e;
+                }
+
+                textarea {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .van-cell.van-hairline.van-field.van-field--disabled {
+            .van-field__control {
+                color: #2d2d2d;
+            }
+        }
+
+        .btn-wrap {
+            line-height: 120px;
+
+            height: 120px;
+            padding: 10px 20px;
+
+            border-radius: 0 0 20px 20px; /* no */
+            background-color: #fff;
+
+            button {
+                font-size: 34px;
+                line-height: 70px;
+
+                width: 100%;
+                height: 70px;
+
+                color: #fff;
+                border: none;
+                border-radius: 10px; /* no */
+            }
+
+            .submit {
+                color: #111;
+                background-color: #11b0f5;
+            }
+        }
+    }
+
+    .pick-mark {
+        position: fixed;
+        z-index: 1090;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background: rgba(236, 240, 243, 0.8);
+
+        .btn-box {
+            font-size: 30px;
+
+            position: absolute;
+            right: 0;
+            bottom: 380px;
+            left: 0;
+
+            display: flex;
+
+            height: 40px;
+            padding: 0 20px;
+
+            background: #fff;
+
+            justify-content: space-between;
+            align-items: center;
+
+            .btn-cancel {
+                color: #55f;
+            }
+
+            .btn-sure {
+                color: #e5004d;
+            }
+        }
+
+        .select {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+        }
+
+        .picker-items {
+            height: 380px;
+
+            background: #eee;
+
+            .picker-slot {
+                font-size: 24px;
+
+                .pick-slot-wrapper {
+                    height: 380px;
+                }
+            }
+
+            .picker-item {
+                line-height: 36px;
+
+                height: 36px;
+                &.picker-selected {
+                    color: red;
+                }
+            }
+
+            .picker-center-highlight {
+                &:before,
+                &:after {
+                    background-color: #888;
+                }
+            }
+        }
+    }
+}

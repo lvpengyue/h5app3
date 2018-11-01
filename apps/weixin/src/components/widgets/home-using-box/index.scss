@@ -1,0 +1,134 @@
+.home-using-box {
+    display: flex;
+
+    width: 100%;
+    height: 260px;
+    margin-bottom: 26px;
+
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: #dcdcdc 0 0 8px 4px;
+    // align-content: center;
+
+    align-items: center;
+
+    .machine-wrap {
+        display: flex;
+        flex-direction: column;
+
+        width: 270px;
+        height: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        .machine {
+            width: 80px;
+            height: 80px;
+        }
+
+        .machine-using {
+            position: relative;
+            z-index: 3;
+
+            width: 60px;
+            height: 70px;
+        }
+
+        .shadow {
+            position: relative;
+            z-index: 2;
+            top: -10px;
+
+            height: 18px;
+        }
+
+        .end-time {
+            font-size: 28px;
+        }
+
+        .no_use {
+            color: #dcdcdc;
+        }
+    }
+
+    .divider {
+        width: 4px;
+        height: 85px;
+
+        background-color: #dcdcdc;
+    }
+
+    .content-wrap {
+        display: flex;
+        flex-direction: column;
+
+        width: 300px;
+
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 30px;
+            line-height: 48px;
+
+            position: relative;
+
+            width: 200px;
+
+            text-align: center;
+        }
+
+        .top {
+            font-weight: 600;
+
+            color: #12b8f6;
+        }
+
+        .no_use {
+            color: #dcdcdc;
+        }
+
+        .middle {
+            font-weight: 600;
+        }
+
+        .foot {
+            font-size: 24px;
+        }
+
+        .my-tip {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+
+            position: absolute;
+            top: -20px;
+            right: -16px;
+
+            display: block;
+
+            padding: 4px;
+
+            color: #fff;
+            border-radius: 10px;
+            background-color: #fc0;
+        }
+    }
+
+    .arrow-to {
+        display: flex;
+
+        height: 100%;
+
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+        .van-icon-arrow {
+            font-size: 32px;
+
+            color: #c5c5c5;
+        }
+    }
+}
