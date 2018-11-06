@@ -24,7 +24,7 @@ const router = new VueRouter({
             name: 'home'
         }
     }, {
-        path: '/home/:rsa',
+        path: '/home/:rsa',  // 微信首页
         name: 'home',
         component(resolve) {
             require.ensure(['../../views/home/index.vue'], () => {
@@ -32,7 +32,7 @@ const router = new VueRouter({
             }, 'static/views/home/index');
         }
     }, {
-        path: '/user-center',
+        path: '/user-center', // 个人信息
         name: 'user-center',
         component(resolve) {
             require.ensure(['../../views/user-center/index.vue'], () => {
@@ -40,7 +40,7 @@ const router = new VueRouter({
             }, 'static/views/user-center/index');
         }
     }, {
-        path: '/edit-name',
+        path: '/edit-name', // 修改昵称
         name: 'edit-name',
         component(resolve) {
             require.ensure(['../../views/edit-name/index.vue'], () => {
@@ -48,7 +48,7 @@ const router = new VueRouter({
             }, 'static/views/edit-name/index');
         }
     }, {
-        path: '/edit-phone',
+        path: '/edit-phone', // 修改手机号--目前取消这个功能
         name: 'edit-phone',
         component(resolve) {
             require.ensure(['../../views/edit-phone/index.vue'], () => {
@@ -56,7 +56,7 @@ const router = new VueRouter({
             }, 'static/views/edit-phone/index');
         }
     }, {
-        path: '/edit-job',
+        path: '/edit-job', // 修改职业
         name: 'edit-job',
         component(resolve) {
             require.ensure(['../../views/edit-job/index.vue'], () => {
@@ -64,7 +64,7 @@ const router = new VueRouter({
             }, 'static/views/edit-job/index');
         }
     }, {
-        path: '/edit-major',
+        path: '/edit-major', // 修改专业
         name: 'edit-major',
         component(resolve) {
             require.ensure(['../../views/edit-major/index.vue'], () => {
@@ -72,7 +72,7 @@ const router = new VueRouter({
             }, 'static/views/edit-major/index');
         }
     }, {
-        path: '/edit-location',
+        path: '/edit-location', // 修改认证地址
         name: 'edit-location',
         component(resolve) {
             require.ensure(['../../views/edit-location/index.vue'], () => {
@@ -80,7 +80,7 @@ const router = new VueRouter({
             }, 'static/views/edit-location/index');
         }
     }, {
-        path: '/charge',
+        path: '/charge', // 充值
         name: 'charge',
         component(resolve) {
             require.ensure(['../../views/charge/index.vue'], () => {
@@ -88,7 +88,7 @@ const router = new VueRouter({
             }, 'static/views/charge/index');
         }
     }, {
-        path: '/hand-input',
+        path: '/hand-input', // 手动输入编码
         name: 'hand-input',
         component(resolve) {
             require.ensure(['../../views/hand-input/index.vue'], () => {
@@ -96,7 +96,7 @@ const router = new VueRouter({
             }, 'static/views/hand-input/index');
         }
     }, {
-        path: '/order-list',
+        path: '/order-list', // 订单列表
         name: 'order-list',
         component(resolve) {
             require.ensure(['../../views/order-list/index.vue'], () => {
@@ -104,7 +104,7 @@ const router = new VueRouter({
             }, 'static/views/order-list/index');
         }
     }, {
-        path: '/machine-list/:areaId',
+        path: '/machine-list/:areaId', // 洗衣机列表
         name: 'machine-list',
         component(resolve) {
             require.ensure(['../../views/machine-list/index.vue'], () => {
@@ -112,7 +112,7 @@ const router = new VueRouter({
             }, 'static/views/machine-list/index');
         }
     }, {
-        path: '/mode-pay/:washerId',
+        path: '/mode-pay/:washerId', // 模式支付--选择模式支付页面
         name: 'mode-pay',
         component(resolve) {
             require.ensure(['../../views/mode-pay/index.vue'], () => {
@@ -120,7 +120,7 @@ const router = new VueRouter({
             }, 'static/views/mode-pay/index');
         }
     }, {
-        path: '/address-list',
+        path: '/address-list', // 地址列表
         name: 'address-list',
         component(resolve) {
             require.ensure(['../../views/address-list/index.vue'], () => {
@@ -128,7 +128,7 @@ const router = new VueRouter({
             }, 'static/views/address-list/index');
         }
     }, {
-        path: '/perfect-information',
+        path: '/perfect-information', // 完善信息
         name: 'perfect-information',
         component(resolve) {
             require.ensure(['../../views/perfect-information/index.vue'], () => {
@@ -136,7 +136,7 @@ const router = new VueRouter({
             }, 'static/views/perfect-information/index');
         }
     }, {
-        path: '/money-detail',
+        path: '/money-detail', // 充值明细
         name: 'money-detail',
         component(resolve) {
             require.ensure(['../../views/money-detail/index.vue'], () => {
@@ -144,7 +144,7 @@ const router = new VueRouter({
             }, 'static/views/money-detail/index');
         }
     }, {
-        path: '/wash-order-detail',
+        path: '/wash-order-detail', // 洗衣订单详情
         name: 'wash-order-detail',
         component(resolve) {
             require.ensure(['../../views/wash-order-detail/index.vue'], () => {
@@ -152,7 +152,7 @@ const router = new VueRouter({
             }, 'static/views/wash-order-detail/index');
         }
     }, {
-        path: '/my-coupons',
+        path: '/my-coupons', // 我的优惠券
         name: 'my-coupons',
         component(resolve) {
             require.ensure(['../../views/my-coupons/index.vue'], () => {
@@ -160,7 +160,7 @@ const router = new VueRouter({
             }, 'static/views/my-coupons/index');
         }
     }, {
-        path: '/meal',
+        path: '/meal', // 月卡
         name: 'meal',
         component(resolve) {
             require.ensure(['../../views/meal/index.vue'], () => {
@@ -168,7 +168,7 @@ const router = new VueRouter({
             }, 'static/views/meal/index');
         }
     }, {
-        path: '/meal-list',
+        path: '/meal-list', // 月卡列表
         name: 'meal-list',
         component(resolve) {
             require.ensure(['../../views/meal-list/index.vue'], () => {
@@ -176,55 +176,7 @@ const router = new VueRouter({
             }, 'static/views/meal-list/index');
         }
     }, {
-        path: '/pin-tuan/:rsa',
-        name: 'pin-tuan',
-        component(resolve) {
-            require.ensure(['../../views/pin-tuan/index.vue'], () => {
-                resolve(require('../../views/pin-tuan/index.vue'));
-            }, 'static/views/pin-tuan/index');
-        }
-    }, {
-        path: '/pay',
-        name: 'pay',
-        component(resolve) {
-            require.ensure(['../../views/pay/index.vue'], () => {
-                resolve(require('../../views/pay/index.vue'));
-            }, 'static/views/pay/index');
-        }
-    }, {
-        path: '/confirm-order/:groupOrderId',
-        name: 'confirm-order',
-        component(resolve) {
-            require.ensure(['../../views/confirm-order/index.vue'], () => {
-                resolve(require('../../views/confirm-order/index.vue'));
-            }, 'static/views/confirm-order/index');
-        }
-    }, {
-        path: '/order-detail/:orderId',
-        name: 'order-detail',
-        component(resolve) {
-            require.ensure(['../../views/order-detail/index.vue'], () => {
-                resolve(require('../../views/order-detail/index.vue'));
-            }, 'static/views/order-detail/index');
-        }
-    }, {
-        path: '/shop-detail/:id',
-        name: 'shop-detail',
-        component(resolve) {
-            require.ensure(['../../views/shop-detail/index.vue'], () => {
-                resolve(require('../../views/shop-detail/index.vue'));
-            }, 'static/views/shop-detail/index');
-        }
-    }, {
-        path: '/test-my',
-        name: 'test-my',
-        component(resolve) {
-            require.ensure(['../../views/test-my/index.vue'], () => {
-                resolve(require('../../views/test-my/index.vue'));
-            }, 'static/views/test-my/index');
-        }
-    }, {
-        path: '/operation-manual',
+        path: '/operation-manual', // 操作指南
         name: 'operation-manual',
         component(resolve) {
             require.ensure(['../../views/operation-manual/index.vue'], () => {
@@ -232,7 +184,7 @@ const router = new VueRouter({
             }, 'static/views/operation-manual/index');
         }
     }, {
-        path: '/wash-manual',
+        path: '/wash-manual', // 洗衣指南
         name: 'wash-manual',
         component(resolve) {
             require.ensure(['../../views/wash-manual/index.vue'], () => {
@@ -240,7 +192,7 @@ const router = new VueRouter({
             }, 'static/views/wash-manual/index');
         }
     }, {
-        path: '/newman-manual',
+        path: '/newman-manual', // 新手指导
         name: 'newman-manual',
         component(resolve) {
             require.ensure(['../../views/newman-manual/index.vue'], () => {
@@ -248,7 +200,7 @@ const router = new VueRouter({
             }, 'static/views/newman-manual/index');
         }
     }, {
-        path: '/exception-manual',
+        path: '/exception-manual', // 异常情况
         name: 'exception-manual',
         component(resolve) {
             require.ensure(['../../views/exception-manual/index.vue'], () => {
@@ -272,7 +224,7 @@ const router = new VueRouter({
             }, 'static/views/mall-my-orders/index');
         }
     }, {
-        path: '/recharge-des',
+        path: '/recharge-des', // 充值说明
         name: 'recharge-des',
         component(resolve) {
             require.ensure(['../../views/recharge-des/index.vue'], () => {
@@ -280,7 +232,7 @@ const router = new VueRouter({
             }, 'static/views/recharge-des/index');
         }
     }, {
-        path: '/about-us',
+        path: '/about-us', // 关于悠洗--微信端暂时不显示
         name: 'about-us',
         component(resolve) {
             require.ensure(['../../views/about-us/index.vue'], () => {
@@ -288,7 +240,7 @@ const router = new VueRouter({
             }, 'static/views/about-us/index');
         }
     }, {
-        path: '/protocol',
+        path: '/protocol', // 用户协议
         name: 'protocol',
         component(resolve) {
             require.ensure(['../../views/protocol/index.vue'], () => {
@@ -296,7 +248,7 @@ const router = new VueRouter({
             }, 'static/views/protocol/index');
         }
     }, {
-        path: '/apply-refund/:orderId',
+        path: '/apply-refund/:orderId', // 申请退款
         name: 'apply-refund',
         component(resolve) {
             require.ensure(['../../views/apply-refund/index.vue'], () => {
@@ -304,7 +256,7 @@ const router = new VueRouter({
             }, 'static/views/apply-refund/index');
         }
     }, {
-        path: '/fail-reporting',
+        path: '/fail-reporting', // 故障排查
         name: 'fail-reporting',
         component(resolve) {
             require.ensure(['../../views/fail-reporting/index.vue'], () => {
@@ -312,7 +264,7 @@ const router = new VueRouter({
             }, 'static/views/fail-reporting/index');
         }
     }, {
-        path: '/feedback',
+        path: '/feedback', // 意见反馈
         name: 'feedback',
         component(resolve) {
             require.ensure(['../../views/feedback/index.vue'], () => {
@@ -320,7 +272,7 @@ const router = new VueRouter({
             }, 'static/views/feedback/index');
         }
     }, {
-        path: '/questionnaire',
+        path: '/questionnaire', // 调查问卷 -- 微信暂时没有
         name: 'questionnaire',
         component(resolve) {
             require.ensure(['../../views/questionnaire/index.vue'], () => {
@@ -328,7 +280,7 @@ const router = new VueRouter({
             }, 'static/views/questionnaire/index');
         }
     }, {
-        path: '/trouble-shooting',
+        path: '/trouble-shooting', // 故障排查
         name: 'trouble-shooting',
         component(resolve) {
             require.ensure(['../../views/trouble-shooting/index.vue'], () => {

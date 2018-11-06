@@ -30,14 +30,10 @@
             <li @click="toLink('meal')" v-show="homeConfig && homeConfig.data && homeConfig.data.config.moduleMeal">购买月卡</li>
         </ul>
         <div class="serve-women">
-            <a href="tel:400-996-6220">
-                <img src="./assets/serve-women.png"
-                     alt="">
-                <p>客服电话</p>
-            </a>
+            <div class="fan-kui" @click="toLink('feedback')">
+                <p>意见反馈</p>
+            </div>
             <div @click="toLink('operation-manual')">
-                <img src="./assets/operation.png"
-                     alt="">
                 <p>操作指南</p>
             </div>
         </div>

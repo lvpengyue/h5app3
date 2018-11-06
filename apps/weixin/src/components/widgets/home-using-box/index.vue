@@ -4,10 +4,12 @@
       <img src="./assets/private-machine.png" alt="" class="machine" v-else> -->
         <div class="machine-wrap"
              v-if="data.state === 1">
-            <img src="./assets/home-wash-scroll.gif"
+             <div class="using-machine">
+                 <img src="./assets/home-wash-scroll.gif"
                  alt=""
                  class="machine machine-using">
-            <img src="./assets/shadow.png" alt="" class="shadow">
+                <img src="./assets/shadow.png" alt="" class="shadow">
+             </div>
             <p class="end-time">00:{{data.surplusTime >= 10 ? data.surplusTime : `0${data.surplusTime}`}}</p>
         </div>
         <div class="machine-wrap"

@@ -5,9 +5,10 @@
 
     width: 100%;
     height: 100%;
-    min-height: 100%;
+    padding-bottom: 230px;
+    // min-height: 100%;
 
-    background: #efefef;
+    background: #fff;
 
     -webkit-overflow-scrolling: touch;
 
@@ -52,37 +53,48 @@
     }
 
     .people {
-        position: fixed;
-        right: 0;
-        bottom: 440px;
+        font-size: 28px;
 
-        width: 86px;
-        height: 80px;
+        position: relative;
 
-        border-top-left-radius: 40px;
-        border-bottom-left-radius: 40px;
-        background-color: #fff;
-        box-shadow: #efefef 0 0 8px 4px;
+        display: flex;
 
-        .people-inner {
-            width: 70px;
-            height: 70px;
-            margin: 5px;
+        width: 192px;
+        height: 60px;
+        margin: 12px 40px;
 
-            border-radius: 35px;
-            background-color: #f6f9fe;
-            background-image: url("./assets/people.png");
-            background-repeat: no-repeat;
-            background-position: 50%;
-            background-size: 50px 50px;
+        border-radius: 30px;
+        background: rgba(245,245,245,1);
+
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 22px;
+            height: 22px;
+            margin-right: 6px;
         }
-    }
 
-    .peopledown {
-        bottom: 160px;
+        // .people-inner {
+        //     width: 70px;
+        //     height: 70px;
+        //     margin: 5px;
+
+        //     border-radius: 35px;
+        //     background-color: #f6f9fe;
+        //     background-image: url("./assets/people.png");
+        //     background-repeat: no-repeat;
+        //     background-position: 50%;
+        //     background-size: 50px 50px;
+        // }
     }
 
     .van-swipe {
+        margin: 0 40px;
+
+        border-radius: 14px;
+        background: rgba(249,249,251,1);
+
         img {
             width: 100%;
             height: 310px;
@@ -139,85 +151,101 @@
         }
     }
 
-    .bottom {
+    .bottom-fixed {
         position: fixed;
         z-index: 12;
         bottom: 0;
 
         width: 100%;
-        height: 90px;
 
-        .top {
+        background-color: #fff;
+        box-shadow: 0 0 12px 0 rgba(180,180,181,0.54);
+
+        .bottom-top {
             display: flex;
 
-            width: 100%;
-            height: 90px;
+            margin-top: 40px;
 
-            background-image: url("./assets/half-circle.png");
-            background-size: 100% 90px;
-
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
 
-            img {
-                width: 30px;
+            .fixed,
+            .kefu {
+                width: 112px;
+                height: 112px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .kefu {
+                position: relative;
+
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    width: 112px;
+                    height: 112px;
+
+                    border-radius: 56px;
+                }
+            }
+
+            .scan {
+                font-size: 40px;
+                font-weight: 500;
+
+                display: flex;
+
+                width: 384px;
+                height: 144px;
+
+                color: #fff;
+                background-image: url("./assets/btn.png");
+                background-repeat: no-repeat;
+                background-size: 384px 144px;
+
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 18px;
+                }
             }
         }
 
-        .bottom {
-            width: 100%;
-            height: 280px;
+        .bottom-bottom {
+            font-family: PingFangHK-Regular;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
 
-            background-color: #fff;
+            display: flex;
 
-            .scan {
-                display: flex;
-                flex-direction: column;
+            height: 32px;
+            margin: 18px 0;
 
-                width: 180px;
-                height: 180px;
-                margin: 0 auto;
+            color: rgba(155,155,155,1);
 
-                border-radius: 115px;
-                background-color: #2fc6f8;
+            align-items: center;
+            justify-content: center;
 
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 50px;
-                }
-
-                p {
-                    font-size: 28px;
-
-                    margin-top: 10px;
-
-                    color: #fff;
-                }
+            img {
+                width: 23px;
+                height: 23px;
+                margin-right: 6px;
             }
 
             .hand_input {
-                font-size: 28px;
-                font-weight: 500;
-                line-height: 100px;
-
-                width: 220px;
-                height: 100px;
-                margin: 0 auto;
-                padding-left: 34px;
-
-                color: #909090;
-                background-image: url("./assets/hand_input.png");
-                background-repeat: no-repeat;
-                background-position: 0 50%;
-                background-size: 28px;
+                border-bottom: 2px solid rgba(155,155,155,1);
             }
         }
-    }
-
-    .show {
-        height: 370px;
     }
 
     .pop-ad {

@@ -9,15 +9,15 @@
                 </div>
                 <div class="wash-mode">
                     <div class="mode-title">快速洗：</div>
-                    <div class="mode-introduction">时长25分钟，普通洗涤一次漂洗，适用小件、少量衣物。</div>
+                    <div class="mode-introduction">时长23分钟，普通洗涤一次漂洗，适用小件、少量衣物。</div>
                 </div>
                 <div class="wash-mode">
                     <div class="mode-title">标准洗：</div>
-                    <div class="mode-introduction">时长35分钟，普通洗涤两次漂洗，适用日常衣物洗涤。</div>
+                    <div class="mode-introduction">时长30分钟，普通洗涤两次漂洗，适用日常衣物洗涤。</div>
                 </div>
                 <div class="wash-mode">
                     <div class="mode-title">强力洗：</div>
-                    <div class="mode-introduction">时长45分钟，双倍洗涤两次漂洗，适用大件、多量衣物。</div>
+                    <div class="mode-introduction">时长40分钟，双倍洗涤两次漂洗，适用大件、多量衣物。</div>
                 </div>
             </div>
             <div class="content-box">

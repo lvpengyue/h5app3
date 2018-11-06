@@ -1,6 +1,10 @@
 <template>
     <div class="home"
          v-if="homeDetail && homeDetail.data">
+         <div @click="handleShowPerson()" class="people">
+             <img src="./assets/people.png" alt="">
+             <p>个人中心</p>
+        </div>
         <van-swipe :autoplay="3000">
             <van-swipe-item v-for="item in homeDetail.data.adlist" :key="item.id">
                 <img :src="item.aliPic" @click="reLocation(item.link)"/>
@@ -28,43 +32,28 @@
                 <span>登录，</span>开启悠生活~</p>
             <p v-else>扫码可直接洗衣哦</p>
         </div>
-        <div :class="{bottom: true, show: scanShow}">
-            <div class="top"
-                 v-if="scanShow"
-                 @click="handleScanShow();">
-                <img src="./assets/down.png"
-                     alt="">
-            </div>
-            <div class="top"
-                 v-else
-                 @click="handleScanShow();">
-                <img src="./assets/up.png"
-                     alt="">
-            </div>
-            <div class="bottom"
-                 v-show="scanShow">
-                <div class="scan" @click="scanQRCode">
-                    <img src="./assets/scan.png"
-                         alt="">
-                    <p>扫码使用</p>
-
+        <div class="bottom-fixed">
+            <div class="bottom-top">
+                <div class="fixed" @click="redirect('trouble-shooting')">
+                    <img src="./assets/fixed.png" alt="">
                 </div>
+                <div class="scan" @click="scanQRCode">
+                     <img src="./assets/scan.png"
+                         alt="">
+                    <span>扫码使用</span>
+                </div>
+                <div class="kefu">
+                    <img src="./assets/kefu.png" alt="">
+                    <a href="tel:400-996-6220"></a>
+                </div>
+            </div>
+            <div class="bottom-bottom">
+                <img src="./assets/hand-in.png" alt="">
                 <div class="hand_input"
                      @click="handleInput()">
-                    手动输入编码
+                    手动输入洗衣机编码
                 </div>
             </div>
-        </div>
-        <div class="feedback"
-             @click="redirect('feedback')"
-             :class="{feedbackdown: !scanShow}"></div>
-        <div class="trouble"
-             @click="redirect('trouble-shooting')"
-             :class="{troubledown: !scanShow}"></div>
-        <div class="people"
-             @click="handleShowPerson()"
-             :class="{peopledown: !scanShow}">
-            <div class="people-inner"></div>
         </div>
         <van-popup v-model="popAd" class="pop-ad">
             <template v-if="homeDetail.data && homeDetail.data.popAd && homeDetail.data.popAd.length > 0">

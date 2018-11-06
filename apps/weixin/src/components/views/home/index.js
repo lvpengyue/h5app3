@@ -149,7 +149,6 @@ export default {
             wx,
             hasList: true, // 是否显示列表
             homeInterval: null, // 首页列表的定时器
-            scanShow: true,
             showPerson: false, // 是否显示个人中心
             popAd: false, // 弹框广告
             couponTip: false, // 登陆送券提示
@@ -291,14 +290,6 @@ export default {
             }).catch(() => {
                 this.homeSetComplete(true);
             });
-        },
-
-        /**
-         * 控制扫码弹框隐藏与否
-         *
-         */
-        handleScanShow() {
-            this.scanShow = !this.scanShow;
         },
 
         /**
